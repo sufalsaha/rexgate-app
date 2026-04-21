@@ -39,7 +39,7 @@ export function ExitIntentPopup() {
       <DialogContent className="sm:max-w-[500px] border-t-4 border-t-[#C9A14A]" aria-describedby="exit-desc">
         <DialogHeader>
           <DialogTitle className="text-2xl font-serif text-[#0B1F3A] dark:text-white">Leaving so soon?</DialogTitle>
-          <DialogDescription className="text-base mt-2" id="exit-desc">
+          <DialogDescription className="text-base mt-2" aria-describedby="exit-desc">
             Don't miss your chance for a <span className="font-semibold text-[#0B1F3A] dark:text-white">Free Canada PR Assessment</span>. Discover your CRS score and eligibility today.
           </DialogDescription>
         </DialogHeader>

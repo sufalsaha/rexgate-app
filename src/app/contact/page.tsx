@@ -15,6 +15,8 @@ export default function Contact() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+   
+    
     toast({ title: "Message Sent", description: "Our team will contact you shortly." });
   };
 
@@ -85,7 +87,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              {/* <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Education</label>
                   <Select required>
@@ -108,12 +110,12 @@ export default function Contact() {
                       <SelectItem value="7+">7+ Years</SelectItem>
                     </SelectContent>
                   </Select>
-                </div>
-              </div>
+                </div> */}
+              {/* </div> */}
 
               <div className="space-y-2">
-                <label className="text-sm font-medium">IELTS</label>
-                <Input placeholder="Overall score or planned test date" />
+                <label className="text-sm font-medium">Email</label>
+                <Input type="email" required placeholder="Your email address" />
               </div>
 
               <div className="space-y-2">

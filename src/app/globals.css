@@ -267,7 +267,7 @@
     @apply border-border;
   }
   html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
   }
   body {
     @apply font-sans antialiased bg-background text-foreground;

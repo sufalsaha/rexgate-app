@@ -19,6 +19,7 @@ export function Navbar() {
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Express Entry", href: "/services/express-entry" },
+    { name: "Blog", href: "/blog" },
     { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" },
   ];
@@ -30,7 +31,7 @@ export function Navbar() {
           <Logo className="scale-90 origin-left" />
         </Link>
 
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-6">
           <nav className="flex items-center gap-6 text-sm font-medium">
             {navItems.map((item) => (
               <Link
@@ -62,11 +63,11 @@ export function Navbar() {
           </div>
         </div>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
+              <Button variant="ghost" size="icon" className="h-10 w-10">
+                <Menu className="h-10 w-10" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">

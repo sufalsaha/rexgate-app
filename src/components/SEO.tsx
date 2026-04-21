@@ -8,8 +8,11 @@ interface SEOProps {
 }
 
 export function SEO({ title, description }: SEOProps) {
+
+  // console.log(title , description);
+  
   useEffect(() => {
-    document.title = `${title} | Rexgate Immigration`;
+    document.title = `${title}`;
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute("content", description);
