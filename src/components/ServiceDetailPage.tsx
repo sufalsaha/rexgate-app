@@ -49,15 +49,15 @@ export function ServiceDetailPage({
   return (
     <div>
       <SEO title={seoTitle} description={seoDescription} />
-      <section className="bg-[#0B1F3A] py-20 text-white text-center mt ">
+      <section className="bg-[#fff] py-20 text-black text-center mt ">
         <div className="container max-w-4xl">
-          <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.28em]">
+          <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.28em]">
             {eyebrow}
           </p>
-          <h1 className="mt-4 text-4xl md:text-6xl font-serif font-bold text-white">
+          <h1 className="mt-4 text-4xl md:text-6xl font-serif font-bold text-black">
             {title}
           </h1>
-          <p className="mt-6 text-xl text-gray-300 leading-8">{description}</p>
+          <p className="mt-6 text-xl text-[#585858] leading-8">{description}</p>
         </div>
       </section>
       <section className="py-16 bg-white">
@@ -65,13 +65,13 @@ export function ServiceDetailPage({
           <aside className="space-y-6">
             <Card className="border-[#C9A14A]/30 shadow-lg">
               <CardContent className="p-7">
-                <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.22em]">
+                <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.22em]">
                   Who it's for
                 </p>
                 <div className="mt-5 grid gap-4">
                   {who.map((item) => (
                     <div key={item} className="flex gap-3 text-slate-700">
-                      <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#C9A14A]" />
+                      <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#EF3340]" />
                       <span>{item}</span>
                     </div>
                   ))}
@@ -79,8 +79,8 @@ export function ServiceDetailPage({
               </CardContent>
             </Card>
             {highlight && (
-              <div className="rounded-xl bg-[#0B1F3A] p-7 text-white shadow-xl">
-                <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.22em]">
+              <div className="rounded-xl bg-[#350000] p-7 text-white shadow-xl">
+                <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.22em]">
                   Advisor Note
                 </p>
                 <p className="mt-4 leading-7 text-blue-50">{highlight}</p>
@@ -102,12 +102,12 @@ export function ServiceDetailPage({
             <div className="grid md:grid-cols-2 gap-7">
               <InfoPanel
                 title="Cost overview"
-                icon={<WalletCards className="h-6 w-6 text-[#C9A14A]" />}
+                icon={<WalletCards className="h-6 w-6 text-[#EF3340]" />}
                 items={cost}
               />
               <InfoPanel
                 title="Timeline"
-                icon={<Clock className="h-6 w-6 text-[#C9A14A]" />}
+                icon={<Clock className="h-6 w-6 text-[#EF3340]" />}
                 items={[timeline]}
               />
             </div>
@@ -129,9 +129,9 @@ export function ServiceDetailPage({
                 ))}
               </div>
             </div>
-            <div className="rounded-xl bg-[#1E3A8A] p-8 text-white shadow-xl flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+            <div className="rounded-xl bg-[#350000] p-8 text-white shadow-xl flex flex-col md:flex-row md:items-center md:justify-between gap-5">
               <div>
-                <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.22em]">
+                <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.22em]">
                   Next Step
                 </p>
                 <h2 className="mt-2 text-2xl font-serif font-bold text-white">
@@ -140,7 +140,7 @@ export function ServiceDetailPage({
               </div>
               <Button
                 asChild
-                className="bg-[#C9A14A] hover:bg-[#b08b3a] text-white font-semibold"
+                className="bg-[#EF3340] hover:bg-[#d81418] text-white font-semibold"
                 data-testid="button-service-assessment"
               >
                 <Link href="/contact">Request Assessment</Link>
@@ -175,11 +175,11 @@ function DetailSection({
             className="flex gap-3 rounded-lg bg-white p-4 text-slate-700 shadow-sm"
           >
             {ordered ? (
-              <span className="font-bold text-[#C9A14A]">{index + 1}.</span>
+              <span className="font-bold text-[#EF3340]">{index + 1}.</span>
             ) : icon === "file" ? (
-              <FileText className="mt-0.5 h-5 w-5 shrink-0 text-[#C9A14A]" />
+              <FileText className="mt-0.5 h-5 w-5 shrink-0 text-[#EF3340]" />
             ) : (
-              <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#C9A14A]" />
+              <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#EF3340]" />
             )}
             <span>{item}</span>
           </div>

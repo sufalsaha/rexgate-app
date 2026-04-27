@@ -91,7 +91,7 @@ export default function Pnp() {
       />
 
       {/* ─── HERO ─── */}
-      <section className="bg-primary py-14 border-b-4 border-accent">
+      <section className="bg-[#fff] py-14 border-b-4 border-accent">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
@@ -101,27 +101,27 @@ export default function Pnp() {
           >
             <motion.p
               variants={fadeUp}
-              className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent mb-4 border-l-2 border-accent pl-3"
+              className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#EF3340] mb-4 border-l-2 border-[#EF3340] pl-3"
             >
               Immigration Services — Provincial Pathways
             </motion.p>
             <motion.h1
               variants={fadeUp}
-              className="font-serif text-[34px] md:text-[44px] font-bold text-white mb-4 leading-snug"
+              className="font-serif text-[34px] md:text-[44px] font-bold text-black mb-4 leading-snug"
             >
               Provincial Nominee Program (PNP)
             </motion.h1>
             <motion.div
               variants={fadeUp}
-              className="space-y-1.5 border-l-2 border-white/20 pl-4 mb-7"
+              className="space-y-1.5 border-l-2 border-[#585858] pl-4 mb-7"
             >
-              <p className="text-sm text-white/75 font-sans">
+              <p className="text-sm text-[#585858] font-sans">
                 PNP is booming. 2026 slots: 91,500 — 66% more than 2025.
               </p>
-              <p className="text-sm text-white/75 font-sans">
+              <p className="text-sm text-[#585858] font-sans">
                 Now claims 38% of all economic-immigration spots.
               </p>
-              <p className="text-sm text-white/75 font-sans">
+              <p className="text-sm text-[#585858] font-sans">
                 Enhanced PNPs add +600 CRS points — virtually a guaranteed ITA.
               </p>
             </motion.div>
@@ -129,15 +129,17 @@ export default function Pnp() {
               variants={fadeUp}
               className="flex flex-col sm:flex-row gap-3"
             >
-              <Link
-                href="/contact"
-                className="bg-accent text-accent-foreground font-semibold px-6 py-3 text-sm text-center hover:bg-accent/90 transition-colors inline-flex items-center gap-2"
+              <button
+                onClick={() => {
+                  window.dispatchEvent(new Event("open-popup"));
+                }}
+                className="bg-[#EF3340] text-accent-foreground font-semibold px-6 py-3 text-sm text-center hover:bg-[#d81418] transition-colors inline-flex items-center gap-2"
               >
                 Get PNP Assessment <ArrowRight size={15} />
-              </Link>
+              </button>
               <Link
                 href="/contact"
-                className="border border-white/30 text-white font-medium px-6 py-3 text-sm text-center hover:bg-white/10 transition-colors inline-flex items-center justify-center"
+                className="border border-white/30 text-black font-medium px-6 py-3 text-sm text-center hover:bg-white/10 transition-colors inline-flex items-center justify-center"
               >
                 Speak to an Advisor
               </Link>
@@ -172,7 +174,7 @@ export default function Pnp() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div>
-              <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent mb-3 border-l-2 border-accent pl-3">
+              <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#EF3340] mb-3 border-l-2 border-[#EF3340] pl-3">
                 Programme Overview
               </p>
               <h2 className="font-serif text-[26px] md:text-[32px] text-primary font-bold mb-4 leading-snug">
@@ -206,9 +208,9 @@ export default function Pnp() {
       <section className="bg-muted py-14 border-b border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-start gap-3 mb-8">
-            <div className="w-1.5 h-full bg-accent shrink-0 self-stretch" />
+            <div className="w-1.5 h-full bg-[#EF3340] shrink-0 self-stretch" />
             <div>
-              <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent mb-2">
+              <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#EF3340] mb-2">
                 Policy Update
               </p>
               <h2 className="font-serif text-[26px] md:text-[32px] text-primary font-bold leading-snug">
@@ -249,7 +251,7 @@ export default function Pnp() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
             <div>
-              <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent mb-3 border-l-2 border-accent pl-3">
+              <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#EF3340] mb-3 border-l-2 border-[#EF3340] pl-3">
                 Documentation
               </p>
               <h2 className="font-serif text-[26px] md:text-[32px] text-primary font-bold mb-4 leading-snug">
@@ -261,7 +263,10 @@ export default function Pnp() {
               </p>
               <div className="bg-muted border border-border p-4">
                 <div className="flex items-start gap-2 mb-2">
-                  <FileText size={15} className="text-accent shrink-0 mt-0.5" />
+                  <FileText
+                    size={15}
+                    className="text-[#EF3340] shrink-0 mt-0.5"
+                  />
                   <p className="font-sans text-sm font-semibold text-primary">
                     Our Role
                   </p>
@@ -284,7 +289,10 @@ export default function Pnp() {
                     transition={{ delay: i * 0.06 }}
                     className="flex items-start gap-3 bg-white border border-border p-4 shadow-sm"
                   >
-                    <Check size={14} className="text-accent shrink-0 mt-0.5" />
+                    <Check
+                      size={14}
+                      className="text-[#EF3340] shrink-0 mt-0.5"
+                    />
                     <p className="font-sans text-sm text-foreground/80">
                       {doc}
                     </p>
@@ -300,7 +308,7 @@ export default function Pnp() {
       <section className="bg-muted py-14 border-b border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
-            <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent mb-2 border-l-2 border-accent pl-3">
+            <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#EF3340] mb-2 border-l-2 border-[#EF3340] pl-3">
               Participating Regions
             </p>
             <h2 className="font-serif text-[26px] md:text-[32px] text-primary font-bold">
@@ -344,7 +352,7 @@ export default function Pnp() {
       <section className="bg-background py-14 border-b border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
-            <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent mb-2 border-l-2 border-accent pl-3">
+            <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#EF3340] mb-2 border-l-2 border-[#EF3340] pl-3">
               Our Process
             </p>
             <h2 className="font-serif text-[26px] md:text-[32px] text-primary font-bold">
@@ -382,8 +390,8 @@ export default function Pnp() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
               >
-                <div className="bg-white border border-border border-t-4 border-t-accent p-5 shadow-sm h-full">
-                  <p className="font-sans text-[11px] font-bold text-accent uppercase tracking-widest mb-3">
+                <div className="bg-white border border-border border-t-4 border-t-[#EF3340] p-5 shadow-sm h-full">
+                  <p className="font-sans text-[11px] font-bold text-[#EF3340] uppercase tracking-widest mb-3">
                     Step {step.n}
                   </p>
                   <h3 className="font-sans text-[14px] font-bold text-primary mb-2">
@@ -400,11 +408,17 @@ export default function Pnp() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="bg-primary py-14">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-[#0B0A0A] py-14">
+        <div 
+        className="absolute inset-0 opacity-70"
+        style={{
+          background: 'radial-gradient(circle, rgba(159,0,0,0.6) 0%, rgba(0,0,0,1) 100%)'
+        }}
+      ></div>
+        <div className=" relative container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div>
-              <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent mb-3 border-l-2 border-accent pl-3">
+              <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#EF3340] mb-3 border-l-2 border-[#EF3340] pl-3">
                 Book a Consultation
               </p>
               <h2 className="font-serif text-[26px] md:text-[32px] font-bold text-white leading-snug max-w-xl">
@@ -421,12 +435,14 @@ export default function Pnp() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-              <Link
-                href="/contact"
-                className="bg-accent text-accent-foreground font-semibold px-7 py-3 text-sm text-center hover:bg-accent/90 transition-colors inline-flex items-center gap-2 whitespace-nowrap"
+              <button
+                onClick={() => {
+                  window.dispatchEvent(new Event("open-popup"));
+                }}
+                className="bg-[#EF3340] text-white font-semibold px-7 py-3 text-sm text-center hover:bg-[#d81418] transition-colors inline-flex items-center gap-2 whitespace-nowrap"
               >
                 Get PNP Assessment <ArrowRight size={14} />
-              </Link>
+              </button>
               <a
                 href="https://wa.me/971000000000"
                 target="_blank"

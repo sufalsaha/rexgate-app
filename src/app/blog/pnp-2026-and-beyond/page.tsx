@@ -47,42 +47,42 @@ export default function PnpBeyond() {
         description="A practical 2026 PNP briefing covering allocations, category draws, regional agreements, digital portals, settlement intent and applicant strategy."
       />
       <article>
-        <section className="bg-[#0B1F3A] py-20 text-white">
+        <section className="bg-[#fff] py-20 text-[#000]">
           <div className="container max-w-4xl">
-            <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.28em]">PNP Strategy</p>
-            <h1 className="mt-4 text-4xl md:text-6xl font-serif font-bold text-white">The Provincial Nominee Program (PNP) in 2026 and Beyond</h1>
-            <p className="mt-6 text-xl leading-8 text-blue-100">
+            <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.28em]">PNP Strategy</p>
+            <h1 className="mt-4 text-4xl md:text-6xl font-serif font-bold text-[#000]">The Provincial Nominee Program (PNP) in 2026 and Beyond</h1>
+            <p className="mt-6 text-xl leading-8 text-[#585858]">
               Canada's Provincial Nominee Programs have always been the back door that becomes a front door when Express Entry scores spike. In 2026 the door is wider – but also smarter – than ever.
             </p>
-            <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#C9A14A]">Estimated read: 4 minutes</p>
+            <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#EF3340]">Estimated read: 4 minutes</p>
           </div>
         </section>
         <section className="container max-w-5xl py-16">
           <section className="mb-12">
-            <h2 className="text-3xl font-serif font-bold text-[#0B1F3A]">1. What's New for 2026</h2>
+            <h2 className="text-3xl font-serif font-bold text-[#000]">1. What's New for 2026</h2>
             <div className="mt-6 grid gap-5">
               {newShifts.map(([area, shift, reason]) => (
-                <div key={area} className="rounded-xl border border-[#0B1F3A]/10 bg-white p-6 shadow-sm">
-                  <h3 className="text-xl font-bold text-[#0B1F3A]">{area}</h3>
-                  <p className="mt-3 text-slate-700"><strong>Key shift:</strong> {shift}</p>
-                  <p className="mt-2 text-slate-700"><strong>Why it matters:</strong> {reason}</p>
+                <div key={area} className="rounded-xl border border-[#EF3340]/10 bg-white p-6 shadow-sm">
+                  <h3 className="text-xl font-bold text-[#000]">{area}</h3>
+                  <p className="mt-3 text-[#585858]"><strong>Key shift:</strong> {shift}</p>
+                  <p className="mt-2 text-[#585858]"><strong>Why it matters:</strong> {reason}</p>
                 </div>
               ))}
             </div>
           </section>
           <section className="mb-12 rounded-xl bg-[#EEF2F7] p-8">
-            <h2 className="text-3xl font-serif font-bold text-[#0B1F3A]">2. What Hasn't Changed</h2>
+            <h2 className="text-3xl font-serif font-bold text-[#000]">2. What Hasn't Changed</h2>
             <ul className="mt-5 grid gap-3">
-              {unchanged.map((item) => <li key={item} className="border-l-2 border-[#C9A14A] bg-white px-4 py-3 text-slate-700">{item}</li>)}
+              {unchanged.map((item) => <li key={item} className="border-l-2 border-[#EF3340] bg-white px-4 py-3 text-slate-700">{item}</li>)}
             </ul>
           </section>
           <section className="mb-12">
-            <h2 className="text-3xl font-serif font-bold text-[#0B1F3A]">3. Trends to Watch (2026-2030)</h2>
+            <h2 className="text-3xl font-serif font-bold text-[#000]">3. Trends to Watch (2026-2030)</h2>
             <div className="mt-6 grid gap-5 md:grid-cols-2">
               {trends.map(([trend, implication]) => (
-                <div key={trend} className="rounded-xl bg-[#0B1F3A] p-6 text-white">
-                  <h3 className="text-xl font-bold text-[#C9A14A]">{trend}</h3>
-                  <p className="mt-3 leading-7 text-blue-50">{implication}</p>
+                <div key={trend} className="rounded-xl bg-[#350000] p-6 text-white">
+                  <h3 className="text-xl font-bold text-[#EF3340]">{trend}</h3>
+                  <p className="mt-3 leading-7 text-[#fff]">{implication}</p>
                 </div>
               ))}
             </div>
@@ -111,12 +111,12 @@ export default function PnpBeyond() {
               <p><strong>Oct-Dec:</strong> Prepare post-nomination documents including upfront medicals and proof of funds update.</p>
             </div>
           </section>
-          <section className="rounded-xl bg-[#0B1F3A] p-8 text-white">
+          <section className="rounded-xl bg-[#350000] p-8 text-white">
             <h2 className="text-3xl font-serif font-bold text-white">Bottom Line</h2>
             <p className="mt-4 leading-8 text-blue-100">
               With higher quotas, more tech-driven draws and stronger settlement enforcement, PNPs will remain the most reliable path to Canadian PR through 2030. Pick the right province, document your intent and stay agile as categories evolve.
             </p>
-            <Button asChild className="mt-6 bg-[#C9A14A] hover:bg-[#b08b3a] text-white">
+            <Button asChild className="mt-6 bg-[#EF3340] hover:bg-[#d81418] text-white">
               <Link href="/contact">Map Your 2026 PNP Strategy</Link>
             </Button>
           </section>

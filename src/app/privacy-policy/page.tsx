@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
   return (
     <div>
       <SEO title="Privacy Policy | Rexgate Immigration" description="Privacy Policy for Rexgate Immigration Advisory." />
-      <div className="bg-[#0B1F3A] py-20 text-white text-center">
+      <div className="bg-[#fff] py-20 text-black text-center">
         <h1 className="text-4xl font-serif font-bold">Privacy Policy</h1>
       </div>
       <div className="container py-20 max-w-4xl">

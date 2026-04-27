@@ -12,9 +12,9 @@ export default function About() {
         title="About Us | Rexgate Immigration" 
         description="Rexgate Immigration is a premier Canada immigration advisory firm based in the UAE. We provide transparent and structured pathways." 
       />
-      <div className="bg-[#0B1F3A] py-20 text-white text-center">
+      <div className="bg-[#fff] py-20 text-black text-center">
         <h1 className="text-4xl md:text-5xl font-serif font-bold">About Rexgate Immigration</h1>
-        <p className="mt-4 text-xl text-gray-300 max-w-2xl mx-auto">
+        <p className="mt-4 text-xl text-[#585858] max-w-2xl mx-auto">
           Strategic, transparent, and built for results. Serving professionals in the UAE & GCC since 2015.
         </p>
       </div>
@@ -57,28 +57,28 @@ export default function About() {
           <div className="grid md:grid-cols-4 gap-8">
             <Card>
               <CardContent className="p-6 text-center">
-                <ShieldCheck className="w-12 h-12 mx-auto text-[#C9A14A] mb-4" />
+                <ShieldCheck className="w-12 h-12 mx-auto text-[#EF3340] mb-4" />
                 <h3 className="font-bold text-lg mb-2">Integrity</h3>
                 <p className="text-sm text-gray-600">No false promises. We give you a realistic assessment of your chances.</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <Target className="w-12 h-12 mx-auto text-[#1E3A8A] mb-4" />
+                <Target className="w-12 h-12 mx-auto text-[#EF3340] mb-4" />
                 <h3 className="font-bold text-lg mb-2">Strategy</h3>
                 <p className="text-sm text-gray-600">Data-driven approaches to maximize your CRS score and profile strength.</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <BookOpen className="w-12 h-12 mx-auto text-[#C9A14A] mb-4" />
+                <BookOpen className="w-12 h-12 mx-auto text-[#EF3340] mb-4" />
                 <h3 className="font-bold text-lg mb-2">Knowledge</h3>
                 <p className="text-sm text-gray-600">Constant monitoring of IRCC updates, draws, and policy changes.</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <Users className="w-12 h-12 mx-auto text-[#1E3A8A] mb-4" />
+                <Users className="w-12 h-12 mx-auto text-[#EF3340] mb-4" />
                 <h3 className="font-bold text-lg mb-2">Client Focus</h3>
                 <p className="text-sm text-gray-600">Dedicated support throughout your entire immigration journey.</p>
               </CardContent>
@@ -86,14 +86,22 @@ export default function About() {
           </div>
         </div>
 
-        <div className="bg-[#1E3A8A] text-white p-12 rounded-xl text-center space-y-6">
-          <h2 className="text-3xl font-serif font-bold">Ready to take the next step?</h2>
+        <div className="relative bg-[#0B0A0A] text-white p-12 rounded-xl text-center space-y-6">
+ <div 
+        className="absolute inset-0 opacity-70"
+        style={{
+          background: 'radial-gradient(circle, rgba(159,0,0,0.6) 0%, rgba(0,0,0,1) 100%)'
+        }}
+      ></div>
+          <div className="relative">
+            <h2 className="text-3xl font-serif font-bold">Ready to take the next step?</h2>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto">
             Book a consultation with our experts to discuss your Canada PR or Visa options.
           </p>
-          <Button size="lg" className="bg-[#C9A14A] hover:bg-[#b08b3a] text-white mt-4" asChild>
+          <Button size="lg" className="bg-[#EF3340] hover:bg-[#d81418] text-white mt-4" asChild>
             <Link href="/contact">Contact Us Today</Link>
           </Button>
+          </div>
         </div>
       </div>
     </div>

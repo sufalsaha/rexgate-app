@@ -1,7 +1,12 @@
+"use client";
+
 // import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import img1 from "@/assets/294 by 110-01.jpg.jpeg";
+import img2 from "@/assets/428px 494px-01.jpg.jpeg";
+import img3 from "@/assets/428px  322px-01.jpg.jpeg";
 import {
   ArrowRight,
   ShieldCheck,
@@ -21,78 +26,85 @@ import {
   Wallet,
 } from "lucide-react";
 import { Metadata } from "next";
+import Image from "next/image";
+import { SEO } from "@/components/SEO";
 
-
-
-export const metadata: Metadata = {
-  title: "Canada Immigration from UAE | Rexgate Advisory",
-  description: "Rexgate Immigration is a premier UAE-based Canada immigration consultancy. Strategic, transparent, and structured pathways for professionals.",
-};
+// export const metadata: Metadata = {
+//   title: "Canada Immigration from UAE | Rexgate Advisory",
+//   description:
+//     "Rexgate Immigration is a premier UAE-based Canada immigration consultancy. Strategic, transparent, and structured pathways for professionals.",
+// };
 
 export default function Home() {
   const OurAdvantages = [
     {
       label: "RCIC-certified specialists ",
-      icon: <BadgeCheck className="h-5 w-5 text-[#C9A14A]" />,
+      icon: <BadgeCheck className="h-5 w-5 text-[#EF3340]" />,
     },
     {
       label: "Real-time application tracking",
-      icon: <Clock className="h-5 w-5 text-[#C9A14A]" />,
+      icon: <Clock className="h-5 w-5 text-[#EF3340]" />,
     },
     {
       label: "Flat fees, zero hidden costs",
-      icon: <Wallet className="h-5 w-5 text-[#C9A14A]" />,
+      icon: <Wallet className="h-5 w-5 text-[#EF3340]" />,
     },
     {
       label: "98% Client Satisfaction",
-      icon: <Star className="h-5 w-5 text-[#C9A14A]" />,
+      icon: <Star className="h-5 w-5 text-[#EF3340]" />,
     },
   ];
 
   return (
     <div>
-      {/* <SEO
+      <SEO
         title="Canada Immigration from UAE | Rexgate Advisory"
         description="Rexgate Immigration is a premier UAE-based Canada immigration consultancy. Strategic, transparent, and structured pathways for professionals."
-      /> */}
+      />
 
       {/* Hero Section */}
-      <section className="relative bg-[#0B1F3A] text-white pt-24 pb-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1517737812598-1a43d0ef2a60?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F3A] via-[#0B1F3A]/90 to-transparent"></div>
+      <section className="relative bg-[#fff] text-black pt-20 pb-24 overflow-hidden">
+        {/* <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1517737812598-1a43d0ef2a60?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay"></div> */}
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F3A] via-[#0B1F3A]/90 to-transparent"></div> */}
 
         <div className="container relative z-10">
           <div className="max-w-3xl space-y-6">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] tracking-tight text-white">
+            <h1 className="text-4xl md:text-6xl lg:text-6xl font-serif font-bold leading-[1.1] tracking-tight text-black">
               Canada Immigration –{" "}
-              <span className="text-[#C9A14A]">Done Right</span>
+              <span className="text-[#EF3340]">Done Right</span>
             </h1>
 
-            <p className="text-sm md:text-base font-bold uppercase tracking-[0.28em] text-[#C9A14A]">
+            <p className="text-sm md:text-base font-bold uppercase tracking-[0.28em] text-[#EF3340]">
               A Decade of Excellence in the UAE
             </p>
-
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed border-l-2 border-[#C9A14A] pl-4">
-              Strategic. Transparent. Engineered for Results | Because your
+            {/* #EF3340 */}
+            <p className="text-lg md:text-xl text-[#585858] max-w-2xl leading-relaxed border-l-2 border-[#EF3340] pl-4">
+              {/* Strategic. Transparent. Engineered for Results | Because your
               Canadian dream isn’t a gamble, it’s a calculation. We fuse
               real-time IRCC intelligence with high-velocity strategy to unlock
-              your PR pathway.
+              your PR pathway. */}
+              <strong>Strategic | Transparent | Engineered for Results </strong> <br />
+              Because your Canadian dream isn’t a gamble, it’s a calculation. We
+              fuse real-time IRCC intelligence with high-velocity strategy to
+              unlock your PR Pathway.
             </p>
 
             <div className="flex flex-col items-start gap-2 pt-4">
-              <Button
-                size="lg"
-                className="bg-[#C9A14A] hover:bg-[#b08b3a] text-white font-semibold text-lg px-8 py-6 h-auto w-full sm:w-auto shadow-[0_4px_14px_0_rgba(201,161,74,0.39)]"
-                asChild
+              <button
+                onClick={() => {
+                  window.dispatchEvent(new Event("open-popup"));
+                }}
+                className="bg-[#EF3340] hover:bg-[#d81418] text-white font-semibold text-lg px-8 py-6 h-auto w-full sm:w-auto shadow-[0_4px_14px_0_rgba(201,161,74,0.39)]"
+                // asChild
               >
-                <Link href="/contact">Claim Your Free PR Audit</Link>
-              </Button>
-              <p className="text-sm font-medium text-blue-100">
+                Claim Your Free PR Audit
+              </button>
+              <p className="text-sm font-medium text-black/70">
                 Takes less than 2 minutes.
               </p>
             </div>
 
-            <div className="pt-8 flex flex-wrap items-center gap-5 text-sm font-medium text-gray-300">
+            {/* <div className="pt-8 flex flex-wrap items-center gap-5 text-sm font-medium text-gray-300">
               <div className="flex items-center gap-2">
                 <Target className="w-5 h-5 text-[#C9A14A]" />
                 <span>No False Promises</span>
@@ -105,16 +117,16 @@ export default function Home() {
                 <Clock className="w-5 h-5 text-[#C9A14A]" />
                 <span>Instant Score Calculation</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
       {/* Stats Bar */}
-      <div className="bg-[#1E3A8A] text-white py-8 border-y border-white/10 relative z-20 -mt-10 mx-4 md:mx-auto container rounded-lg shadow-xl">
+      <div className="bg-[#3B0809] text-white py-8 border-y border-white/10 relative z-20 -mt-10 mx-4 md:mx-auto container rounded-lg shadow-xl">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-white/10 text-center">
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-[#C9A14A] mb-1">
+            <div className="text-3xl md:text-4xl font-bold text-[#EF3340] mb-1">
               10+
             </div>
             <div className="text-xs md:text-sm text-gray-300 uppercase tracking-wider font-medium">
@@ -122,7 +134,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-[#C9A14A] mb-1">
+            <div className="text-3xl md:text-4xl font-bold text-[#EF3340] mb-1">
               2.5k+
             </div>
             <div className="text-xs md:text-sm text-gray-300 uppercase tracking-wider font-medium">
@@ -130,7 +142,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-[#C9A14A] mb-1">
+            <div className="text-3xl md:text-4xl font-bold text-[#EF3340] mb-1">
               3k+
             </div>
             <div className="text-xs md:text-sm text-gray-300 uppercase tracking-wider font-medium">
@@ -138,7 +150,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-[#C9A14A] mb-1">
+            <div className="text-3xl md:text-4xl font-bold text-[#EF3340] mb-1">
               UAE & GCC
             </div>
             <div className="text-xs md:text-sm text-gray-300 uppercase tracking-wider font-medium">
@@ -153,7 +165,7 @@ export default function Home() {
           {OurAdvantages.map((item) => (
             <div
               key={item.label}
-              className="flex items-center gap-3 border-l-2 border-[#C9A14A] bg-[#EEF2F7]/60 px-4 py-3"
+              className="flex items-center gap-3 border-l-2 border-[#EF3340] bg-[#EEF2F7]/60 px-4 py-3"
             >
               {item.icon}
               <span>{item.label}</span>
@@ -165,19 +177,19 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-start">
           <div className="space-y-6">
-            <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.24em]">
+            <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.24em]">
               Why Rexgate Immigration?
             </p>
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#0B1F3A]">
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#000]">
               Canadian PR success through strategy – not paperwork alone.
             </h2>
             <p className="text-lg leading-8 text-slate-600">
               Rexgate Immigration is a UAE-based, RCIC-regulated firm that
-              engineers Canadian PR success through strategy – not paperwork
+              engineers Canadian PR success through strategy not paperwork
               alone.
             </p>
             <p className="leading-7 text-slate-600">
-              We map your best route – from Express Entry and Provincial Nominee
+              We map your best route from Express Entry and Provincial Nominee
               Programs to study, visitor, family, and business mobility streams
               using real-time IRCC data.
             </p>
@@ -190,7 +202,7 @@ export default function Home() {
                   "Document checklists built for zero rework",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
-                    <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-[#C9A14A]" />
+                    <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-[#EF3340]" />
                     <span>{item}</span>
                   </div>
                 ))}
@@ -202,22 +214,27 @@ export default function Home() {
           </div>
           <div className="space-y-4">
             <div className="grid grid-cols-5 grid-rows-5 gap-3 min-h-[420px]">
-              <img
-                src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=80"
+              <Image
+                src={img1}
                 alt="Toronto skyline for Canada immigration"
                 className="col-span-3 row-span-5 h-full w-full rounded-2xl object-cover shadow-xl"
               />
-              <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80"
+              <Image
+                src={img2}
                 alt="Canadian landscape"
                 className="col-span-2 row-span-3 h-full w-full rounded-2xl object-cover shadow-lg"
               />
-              <div className="col-span-2 row-span-2 rounded-2xl bg-[#0B1F3A] p-6 text-white shadow-lg">
+              <Image
+                src={img3}
+                alt="Canadian landscape"
+                className="col-span-2 row-span-2 h-full w-full rounded-2xl object-cover shadow-lg"
+              />
+              {/* <div className="col-span-2 row-span-2 rounded-2xl bg-[#0B1F3A] p-6 text-white shadow-lg">
                 <p className="text-4xl font-bold text-[#C9A14A]">PR</p>
                 <p className="mt-2 text-sm uppercase tracking-[0.2em] text-blue-100">
                   Strategy first
                 </p>
-              </div>
+              </div> */}
             </div>
             <p className="text-center text-lg font-serif font-bold text-[#0B1F3A]">
               Your Passport to a New Beginning in Canada
@@ -230,7 +247,7 @@ export default function Home() {
       <section className="py-24 bg-gray-50 dark:bg-background">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 className="text-sm font-bold text-[#C9A14A] uppercase tracking-widest">
+            <h2 className="text-sm font-bold text-[#EF3340] uppercase tracking-widest">
               Our Expertise
             </h2>
             <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#0B1F3A] dark:text-white">
@@ -247,49 +264,49 @@ export default function Home() {
               title="Express Entry"
               description="The fastest pathway for skilled professionals. We optimize your CRS score and manage your profile for maximum ITA chances."
               link="/services/express-entry"
-              icon={<TrendingUp className="w-8 h-8 text-[#1E3A8A]" />}
+              icon={<TrendingUp className="w-8 h-8 text-[#EF3340]" />}
             />
             <ServiceCard
               title="Provincial Nomination Program (PNP)"
               description="Alternative pathways for specific provinces. Ideal for candidates with targeted skills or those needing a CRS boost."
               link="/services/pnp"
-              icon={<ShieldCheck className="w-8 h-8 text-[#1E3A8A]" />}
+              icon={<ShieldCheck className="w-8 h-8 text-[#EF3340]" />}
             />
             <ServiceCard
               title="Rural Community Immigration Pilot (RCIP)"
               description="A regional Canada immigration process for eligible professionals seeking alternative low CRS score pathways."
               link="/services/rcip"
-              icon={<Target className="w-8 h-8 text-[#1E3A8A]" />}
+              icon={<Target className="w-8 h-8 text-[#EF3340]" />}
             />
             <ServiceCard
               title="Study in Canada (Student Visa)"
               description="Secure your student visa with a strategic SOP. A proven stepping stone to Post-Graduation Work Permit and PR."
               link="/services/student-visa"
-              icon={<FileText className="w-8 h-8 text-[#1E3A8A]" />}
+              icon={<FileText className="w-8 h-8 text-[#EF3340]" />}
             />
             <ServiceCard
               title="Tourist Visa"
               description="Visitor visa documentation strategy for UAE and GCC residents with travel purpose, ties, and finances aligned."
               link="/services/visit-visa"
-              icon={<Users className="w-8 h-8 text-[#1E3A8A]" />}
+              icon={<Users className="w-8 h-8 text-[#EF3340]" />}
             />
             <ServiceCard
               title="Work Permit"
               description="Work permit advisory for eligible professionals, business transfers, employer-backed pathways, and mobility streams."
               link="/services/ict-work-permit"
-              icon={<Briefcase className="w-8 h-8 text-[#1E3A8A]" />}
+              icon={<Briefcase className="w-8 h-8 text-[#EF3340]" />}
             />
             <ServiceCard
               title="Super Visa"
               description="Long-stay visitor visa advisory for parents and grandparents with financial, insurance, and invitation planning."
               link="/services/super-visa"
-              icon={<Award className="w-8 h-8 text-[#1E3A8A]" />}
+              icon={<Award className="w-8 h-8 text-[#EF3340]" />}
             />
           </div>
           <div className="text-center mt-12">
             <Button
               variant="outline"
-              className="border-[#0B1F3A] text-[#0B1F3A] dark:border-white dark:text-white hover:bg-[#0B1F3A] hover:text-white dark:hover:bg-white dark:hover:text-[#0B1F3A]"
+              className="border-[#0B1F3A] text-[#0B1F3A] dark:border-white dark:text-white hover:bg-[#EF3340] hover:text-white dark:hover:bg-white dark:hover:text-[#0B1F3A]"
               asChild
             >
               <Link href="/services">
@@ -303,7 +320,7 @@ export default function Home() {
       <section className="py-20 bg-[#EEF2F7]">
         <div className="container">
           <div className="mb-12 max-w-3xl">
-            <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.24em]">
+            <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.24em]">
               Advisory Process
             </p>
             <h2 className="mt-3 text-3xl md:text-5xl font-serif font-bold text-[#0B1F3A]">
@@ -319,9 +336,9 @@ export default function Home() {
             ].map((step, index) => (
               <div
                 key={step}
-                className="relative bg-white p-6 shadow-md border-t-4 border-[#C9A14A]"
+                className="relative bg-white p-6 shadow-md border-t-4 border-[#EF3340]"
               >
-                <div className="text-5xl font-serif font-bold text-[#0B1F3A]/10">
+                <div className="text-5xl font-serif font-bold text-[#EF3340]/20">
                   0{index + 1}
                 </div>
                 <h3 className="mt-4 text-xl font-bold text-[#0B1F3A]">
@@ -369,8 +386,8 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="rounded-xl border border-[#0B1F3A]/10 bg-[#0B1F3A] p-8 text-white shadow-xl">
-            <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.24em]">
+          <div className="rounded-xl border border-[#0B1F3A]/10 bg-[#350000] p-8 text-white shadow-xl">
+            <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.24em]">
               Document Checklist
             </p>
             <h2 className="mt-3 text-3xl font-serif font-bold text-white">
@@ -392,7 +409,7 @@ export default function Home() {
                   key={item}
                   className="flex items-center gap-3 border border-white/10 bg-white/5 px-4 py-3"
                 >
-                  <ClipboardList className="h-4 w-4 text-[#C9A14A]" />
+                  <ClipboardList className="h-4 w-4 text-[#EF3340]" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -407,7 +424,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h2 className="text-sm font-bold text-[#C9A14A] uppercase tracking-widest">
+                <h2 className="text-sm font-bold text-[#EF3340] uppercase tracking-widest">
                   Why Choose Us
                 </h2>
                 <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#0B1F3A] dark:text-white">
@@ -425,7 +442,7 @@ export default function Home() {
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="mt-1 bg-[#1E3A8A]/10 p-2 rounded-lg h-fit">
-                    <ShieldCheck className="w-6 h-6 text-[#1E3A8A] dark:text-[#C9A14A]" />
+                    <ShieldCheck className="w-6 h-6 text-[#EF3340] dark:text-[#C9A14A]" />
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">Regulated & Compliant</h4>
@@ -437,7 +454,8 @@ export default function Home() {
                 </div>
                 <div className="flex gap-4">
                   <div className="mt-1 bg-[#1E3A8A]/10 p-2 rounded-lg h-fit">
-                    <TrendingUp className="w-6 h-6 text-[#1E3A8A] dark:text-[#C9A14A]" />
+                    <TrendingUp className="w-6 h-6 text-[#EF3340] " />
+                    {/* dark:text-[#C9A14A] */}
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">
@@ -452,8 +470,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-[#0B1F3A] rounded-xl p-8 md:p-12 text-white shadow-2xl relative">
-              <div className="absolute -top-4 -right-4 bg-[#C9A14A] text-white text-xs font-bold px-4 py-1 rounded shadow-lg uppercase tracking-wide">
+            <div className="bg-[#350000] rounded-xl p-8 md:p-12 text-white shadow-2xl relative">
+              <div className="absolute -top-4 -right-4 bg-[#EF3340] text-white text-xs font-bold px-4 py-1 rounded shadow-lg uppercase tracking-wide">
                 Case Study
               </div>
               <h4 className="text-2xl font-serif font-bold mb-6">
@@ -484,7 +502,7 @@ export default function Home() {
                     <span className="font-mono text-3xl font-bold text-green-400">
                       472
                     </span>
-                    <div className="text-[#C9A14A] text-sm font-bold mt-1">
+                    <div className="text-[#EF3340] text-sm font-bold mt-1">
                       ITA Received
                     </div>
                   </div>
@@ -499,14 +517,14 @@ export default function Home() {
         <div className="container">
           <div className="mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div>
-              <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.24em]">
+              <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.24em]">
                 Client Feedback
               </p>
               <h2 className="mt-3 text-3xl md:text-5xl font-serif font-bold text-[#0B1F3A]">
                 Professional, transparent, structured.
               </h2>
             </div>
-            <div className="flex gap-1 text-[#C9A14A]">
+            <div className="flex gap-1 text-[#EF3340]">
               {[1, 2, 3, 4, 5].map((star) => (
                 <Star key={star} className="h-5 w-5 fill-current" />
               ))}
@@ -551,7 +569,7 @@ export default function Home() {
         <div className="container">
           <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
-              <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.24em]">
+              <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.24em]">
                 Latest Updates
               </p>
               <h2 className="mt-3 text-3xl md:text-5xl font-serif font-bold text-[#0B1F3A]">
@@ -564,13 +582,13 @@ export default function Home() {
             </div>
             <Button
               variant="outline"
-              className="w-fit border-[#0B1F3A] text-[#0B1F3A] hover:bg-[#0B1F3A] hover:text-white"
+              className="w-fit border-[#0B1F3A] text-[#0B1F3A] hover:bg-[#d81418] hover:text-white"
               asChild
             >
               <Link href="/blog">View Blog</Link>
             </Button>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             {[
               {
                 title:
@@ -588,14 +606,29 @@ export default function Home() {
                   "A practical briefing on PNP allocation shifts, category-based draws, settlement intent and applicant strategy for the next five years.",
                 href: "/blog/pnp-2026-and-beyond",
               },
+              {
+                title: "Canada’s New TR-to-PR Direction",
+                date: "2026",
+                snippet:
+                  "The original Temporary Resident to Permanent Resident pathway remains closed and has been closed since November 5, 2021.",
+                href: "/blog/canada-new-tr-to-pr-direction",
+              },
+              {
+                title:
+                  "Recent changes to Canada’s Rural Community Immigration Pilot (RCIP)",
+                date: "2026",
+                snippet:
+                  "The RCIP sits in a very specific policy space: it is designed to move skilled workers into smaller communities that have persistent vacancies.",
+                href: "/blog/recent-changes-canada-rcip",
+              },
             ].map((post) => (
               <Link
                 key={post.title}
                 href={post.href}
                 className="group border border-[#0B1F3A]/10 bg-[#EEF2F7]/60 p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
               >
-                <Newspaper className="h-7 w-7 text-[#1E3A8A]" />
-                <p className="mt-5 text-xs font-bold uppercase tracking-[0.2em] text-[#C9A14A]">
+                <Newspaper className="h-7 w-7 text-[#EF3340]" />
+                <p className="mt-5 text-xs font-bold uppercase tracking-[0.2em] text-[#EF3340]">
                   {post.date}
                 </p>
                 <h3 className="mt-3 text-xl font-bold font-serif text-[#0B1F3A] group-hover:text-[#1E3A8A]">
@@ -614,8 +647,15 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-[#1E3A8A] text-white text-center">
-        <div className="container max-w-4xl space-y-8">
+      <section className="py-24 relative bg-[#0B0A0A] text-white text-center ">
+        <div
+          className="absolute inset-0 opacity-70"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(159,0,0,0.6) 0%, rgba(0,0,0,1) 100%)",
+          }}
+        ></div>
+        <div className="container relative max-w-4xl text-white space-y-8">
           <h2 className="text-4xl md:text-5xl font-serif font-bold">
             Ready to Start Your Journey?
           </h2>
@@ -624,13 +664,13 @@ export default function Home() {
             evaluate your profile and map out your exact timeline and costs.
           </p>
           <div className="pt-4">
-            <Button
-              size="lg"
-              className="bg-[#C9A14A] hover:bg-[#b08b3a] text-white font-semibold text-lg px-10 py-7 h-auto"
-              asChild
+            <span
+              // size="lg"
+              className="bg-[#EF3340] hover:bg-[#d81418] text-white font-semibold text-lg px-10 py-6 h-auto"
+              // asChild
             >
               <Link href="/contact">Book Your Consultation Now</Link>
-            </Button>
+            </span>
           </div>
         </div>
       </section>
@@ -666,7 +706,7 @@ function ServiceCard({
         <div className="pt-4 border-t border-border">
           <Link
             href={link}
-            className="inline-flex items-center text-sm font-bold text-[#1E3A8A] dark:text-[#C9A14A] hover:underline uppercase tracking-wide"
+            className="inline-flex items-center text-sm font-bold text-[#EF3340] dark:text-[#C9A14A] hover:underline uppercase tracking-wide"
           >
             Learn More <ChevronRight className="ml-1 w-4 h-4" />
           </Link>

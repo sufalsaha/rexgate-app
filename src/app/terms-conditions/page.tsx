@@ -5,7 +5,7 @@ export default function TermsConditions() {
   return (
     <div>
       <SEO title="Terms & Conditions | Rexgate Immigration" description="Terms and Conditions for Rexgate Immigration Advisory." />
-      <div className="bg-[#0B1F3A] py-20 text-white text-center">
+      <div className="bg-[#FEF2F2] py-20 text-black text-center">
         <h1 className="text-4xl font-serif font-bold">Terms & Conditions</h1>
       </div>
       <div className="container py-20 max-w-4xl">

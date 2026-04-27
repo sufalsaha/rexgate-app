@@ -55,24 +55,24 @@ const posts = [
   },
   {
     id: 3,
-    title: "Canada Immigration News Today: What's Changing in 2026",
-    date: "April 10, 2026",
-    readTime: "6 min read",
+    title: "Canada’s New TR-to-PR Direction",
+    date: "April 20, 2026",
+    readTime: "40 min read",
     category: "Immigration News",
-    blogUrl: "/blog/canada-2026-immigration-overhaul",
+    blogUrl: "/blog/canada-new-tr-to-pr-direction",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=900&auto=format&fit=crop",
-    excerpt: "IRCC has announced several key changes to Express Entry draw frequencies and CRS thresholds for 2026. Here's what UAE-based applicants need to know and how these changes affect your immigration timeline.",
+    excerpt: "For many temporary residents in Canada, the biggest question right now is simple: is a new TR-to-PR pathway finally coming back?",
     highlights: [],
   },
   {
     id: 4,
-    title: "IRCC Updates 2025: Policy Changes Explained",
+    title: "Recent changes to Canada’s Rural Community Immigration Pilot (RCIP)",
     date: "March 22, 2026",
     readTime: "8 min read",
     category: "IRCC Updates",
-    blogUrl: "/blog/canada-2026-immigration-overhaul",
+    blogUrl: "/blog/recent-changes-canada-rcip",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=900&auto=format&fit=crop",
-    excerpt: "A comprehensive overview of the major IRCC policy updates that took effect in 2025 — including changes to Express Entry eligibility, new NOC classifications, and updated proof of funds requirements.",
+    excerpt: "The RCIP sits in a very specific policy space: it is designed to move skilled workers into smaller communities that have persistent vacancies",
     highlights: [],
   },
   {
@@ -104,18 +104,18 @@ export default function Blog() {
     <div>
  <SEO title="Blog & Immigration News | Rexgate Immigration" description="Stay updated with the latest Canada immigration news, Express Entry draws, and IRCC policy changes." />
       {/* ─── HERO ─── */}
-      <section className="bg-primary py-14 border-b-4 border-accent">
+      <section className="bg-[#fff] py-14 border-b-4 border-[#EF3340]/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial="hidden" animate="show" variants={stagger} className="max-w-3xl">
-            <motion.p variants={fadeUp} className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent mb-4 border-l-2 border-accent pl-3">
+            <motion.p variants={fadeUp} className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#EF3340] mb-4 border-l-2 border-[#d81418] pl-3">
               Immigration Insights
             </motion.p>
-            <motion.h1 variants={fadeUp} className="font-serif text-[34px] md:text-[44px] font-bold text-white mb-4 leading-snug">
+            <motion.h1 variants={fadeUp} className="font-serif text-[34px] md:text-[44px] font-bold text-[#000] mb-4 leading-snug">
               Latest Updates &amp; Analysis
             </motion.h1>
             <motion.div variants={fadeUp} className="space-y-1.5 border-l-2 border-white/20 pl-4">
-              <p className="text-sm text-white/70 font-sans">IRCC policy updates, Express Entry draw analysis, and strategic guidance.</p>
-              <p className="text-sm text-white/70 font-sans">Updated regularly by the Rexgate advisory team.</p>
+              <p className="text-sm text-[#585858] font-sans">IRCC policy updates, Express Entry draw analysis, and strategic guidance.</p>
+              <p className="text-sm text-[#585858] font-sans">Updated regularly by the Rexgate advisory team.</p>
             </motion.div>
           </motion.div>
         </div>
@@ -125,7 +125,7 @@ export default function Blog() {
       <section className="bg-background py-14 border-b border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent mb-2 border-l-2 border-accent pl-3">Featured Articles</p>
+            <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#EF3340] mb-2 border-l-2 border-[#d81418] pl-3">Featured Articles</p>
             <h2 className="font-serif text-[24px] text-primary font-bold">Most Recent</h2>
           </div>
 
@@ -186,7 +186,7 @@ export default function Blog() {
       <section className="bg-muted py-14 border-b border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent mb-2 border-l-2 border-accent pl-3">More Articles</p>
+            <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#EF3340] mb-2 border-l-2 border-[#d81418] pl-3">More Articles</p>
             <h2 className="font-serif text-[24px] text-primary font-bold">All Insights</h2>
           </div>
 
@@ -224,11 +224,17 @@ export default function Blog() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="bg-primary py-14">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-[#0B0A0A] py-14">
+         <div 
+        className="absolute inset-0 opacity-70"
+        style={{
+          background: 'radial-gradient(circle, rgba(159,0,0,0.6) 0%, rgba(0,0,0,1) 100%)'
+        }}
+      ></div>
+        <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div>
-              <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-accent mb-3 border-l-2 border-accent pl-3">Questions?</p>
+              <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#EF3340] mb-3 border-l-2 border-[#d81418] pl-3">Questions?</p>
               <h2 className="font-serif text-[26px] md:text-[32px] font-bold text-white leading-snug">
                 Have Questions About 2026 Changes?
               </h2>
@@ -238,7 +244,7 @@ export default function Blog() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-              <Link href="/contact" className="bg-accent text-accent-foreground font-semibold px-7 py-3 text-sm text-center hover:bg-accent/90 transition-colors inline-flex items-center gap-2 whitespace-nowrap">
+              <Link href="/contact" className="bg-[#EF3340] text-accent-foreground font-semibold px-7 py-3 text-sm text-center hover:bg-[#d81418]/90 transition-colors inline-flex items-center gap-2 whitespace-nowrap">
                 Book a Consultation <ArrowRight size={14} />
               </Link>
               <a href="https://wa.me/971000000000" target="_blank" rel="noopener noreferrer"

@@ -98,11 +98,11 @@ export default function FAQ() {
   return (
     <div>
       <SEO title="Frequently Asked Questions | Rexgate Immigration" description="Answers to questions about Canada PR, CRS score Canada, IELTS, cost, processing time and Canada immigration from UAE." />
-      <section className="bg-[#0B1F3A] py-20 text-white text-center">
+      <section className="bg-[#fff] py-20 text-[#000] text-center">
         <div className="container max-w-4xl">
-          <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.28em]">FAQ</p>
-          <h1 className="mt-4 text-4xl md:text-6xl font-serif font-bold text-white">Frequently Asked Questions</h1>
-          <p className="mt-5 text-xl text-gray-300">Clear answers to complex Canada immigration, Canada PR and Canada visa questions.</p>
+          <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.28em]">FAQ</p>
+          <h1 className="mt-4 text-4xl md:text-6xl font-serif font-bold text-[#000]">Frequently Asked Questions</h1>
+          <p className="mt-5 text-xl text-[#585858]">Clear answers to complex Canada immigration, Canada PR and Canada visa questions.</p>
         </div>
       </section>
       <section className="container py-20 max-w-5xl">
@@ -114,9 +114,9 @@ export default function FAQ() {
             </div>
           ))}
         </div>
-        <div className="mt-12 rounded-xl bg-[#EEF2F7] p-8 text-center">
-          <p className="text-lg text-slate-700 mb-6">Have a question not listed here?</p>
-          <Button asChild className="bg-[#1E3A8A] text-white hover:bg-[#152960]" data-testid="button-ask-expert">
+        <div className="mt-12 rounded-xl bg-[#350000] p-8 text-center">
+          <p className="text-lg text-white mb-6">Have a question not listed here?</p>
+          <Button asChild className="bg-[#EF3340] text-white hover:bg-[#d81418]/90" data-testid="button-ask-expert">
             <Link href="/contact">Ask an Expert</Link>
           </Button>
         </div>

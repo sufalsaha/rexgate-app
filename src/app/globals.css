@@ -159,7 +159,10 @@
   --primary: 215 68% 14%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 41 55% 54%;
+  /* 41 55% 54% */
+  /* #F5191D */
+
+  --secondary: 358, 92%, 53% ;
   --secondary-foreground: 0 0% 100%;
 
   --muted: 213 33% 95%;
@@ -173,7 +176,7 @@
 
   --border: 213 33% 90%;
   --input: 213 33% 90%;
-  --ring: 41 55% 54%;
+  --ring: 359 99% 50%;
 
   --app-font-sans: 'Inter', sans-serif;
   --app-font-serif: 'Playfair Display', serif;

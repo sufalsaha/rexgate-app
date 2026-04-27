@@ -11,7 +11,9 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
-import { Logo } from "../Logo";
+// import { Logo } from "../Logo";
+import logo from "@/assets/logo.svg";
+import Image from "next/image";
 
 export function Navbar() {
   const navItems = [
@@ -28,7 +30,8 @@ export function Navbar() {
     <header className="sticky top-0 left-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
       <div className="container flex h-20 items-center justify-between">
         <Link href="/">
-          <Logo className="scale-90 origin-left" />
+          {/* <Logo className="scale-90 origin-left" /> */}
+          <Image src={logo} alt="Logo" className="" />
         </Link>
 
         <div className="hidden lg:flex items-center gap-6">
@@ -55,7 +58,7 @@ export function Navbar() {
             </a>
             <Button
               variant="default"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
+              className="bg-[#EF3340] text-primary-foreground hover:bg-[#d81418] font-semibold"
               asChild
             >
               <Link href="/contact">Free Assessment</Link>

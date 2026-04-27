@@ -53,11 +53,11 @@ export default function Services() {
         title="Our Services | Rexgate Immigration"
         description="Explore our Canada immigration services including Express Entry, PNP, Student Visas, and more."
       />
-      <div className="bg-[#0B1F3A] py-20 text-white text-center">
+      <div className="bg-[#fff] py-20 text-black text-center">
         <h1 className="text-4xl md:text-5xl font-serif font-bold">
           Immigration Services
         </h1>
-        <p className="mt-4 text-xl text-gray-300 max-w-2xl mx-auto">
+        <p className="mt-4 text-xl text-[#585858] max-w-2xl mx-auto">
           Comprehensive pathways for Canada PR, Work, Study, and Visit visas.
         </p>
       </div>
@@ -70,13 +70,13 @@ export default function Services() {
               className="group hover:border-[#1E3A8A] transition-all duration-300"
             >
               <CardContent className="p-8">
-                <h3 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3 group-hover:text-[#1E3A8A]">
+                <h3 className="text-2xl font-serif font-bold text-[#000] mb-3 group-hover:text-[#350000]">
                   {s.title}
                 </h3>
                 <p className="text-gray-600 mb-6">{s.desc}</p>
                 <Link
                   href={s.link}
-                  className="inline-flex items-center text-sm font-bold text-[#C9A14A] hover:text-[#b08b3a] uppercase tracking-wider"
+                  className="inline-flex items-center text-sm font-bold text-[#EF3340] hover:text-[#d81418] uppercase tracking-wider"
                 >
                   Learn More <ChevronRight className="w-4 h-4 ml-1" />
                 </Link>

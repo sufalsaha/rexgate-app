@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import { FormEvent } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { BsWhatsapp } from "react-icons/bs";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -23,9 +24,9 @@ export default function Contact() {
   return (
     <div>
       <SEO title="Contact Us | Rexgate Immigration" description="Contact our Dubai office for your Canada PR assessment and immigration consultation." />
-      <div className="bg-[#0B1F3A] py-20 text-white text-center">
-        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white">Contact Us</h1>
-        <p className="mt-4 text-xl text-gray-300 max-w-2xl mx-auto">
+      <div className="bg-[#fff] py-20 text-[#000] text-center">
+        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000]">Contact Us</h1>
+        <p className="mt-4 text-xl text-[#585858] max-w-2xl mx-auto">
           Take the first step towards your Canadian dream.
         </p>
       </div>
@@ -40,24 +41,31 @@ export default function Contact() {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 text-[#C9A14A] mt-1" />
+                <MapPin className="w-6 h-6 text-[#EF3340] mt-1" />
                 <div>
                   <h4 className="font-bold text-[#0B1F3A]">Dubai Office</h4>
                   <p className="text-gray-600">Office 104, Business Bay<br />Dubai, United Arab Emirates</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 text-[#C9A14A] mt-1" />
+                <Phone className="w-6 h-6 text-[#EF3340] mt-1" />
                 <div>
                   <h4 className="font-bold text-[#0B1F3A]">Phone</h4>
                   <p className="text-gray-600">+971 50 123 4567</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Mail className="w-6 h-6 text-[#C9A14A] mt-1" />
+                <Mail className="w-6 h-6 text-[#EF3340] mt-1" />
                 <div>
                   <h4 className="font-bold text-[#0B1F3A]">Email</h4>
                   <p className="text-gray-600">info@rexgateimmigration.com</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <BsWhatsapp className="w-6 h-6 text-[#EF3340] mt-1" />
+                <div>
+                  <h4 className="font-bold text-[#0B1F3A]">WhatsApp</h4>
+                  <p className="text-gray-600">+971 50 123 4567</p>
                 </div>
               </div>
             </div>
@@ -123,7 +131,7 @@ export default function Contact() {
                 <Textarea rows={4} placeholder="Tell us about your goals..." />
               </div>
 
-              <Button type="submit" className="w-full bg-[#1E3A8A] hover:bg-[#152960] text-white">Submit Request</Button>
+              <Button type="submit" className="w-full bg-[#EF3340] hover:bg-[#d81418] text-white">Submit Request</Button>
             </form>
           </div>
         </div>

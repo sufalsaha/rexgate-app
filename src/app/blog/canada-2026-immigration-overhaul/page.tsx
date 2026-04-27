@@ -70,43 +70,43 @@ export default function CanadaOverhaul() {
         description="Key 2026 Canada immigration changes: PR targets, Express Entry categories, temporary resident caps, Bill C-12, fees, Super Visa and compliance."
       />
       <article>
-        <section className="bg-[#0B1F3A] py-20 text-white">
+        <section className="bg-[#fff] py-20 text-[#000]">
           <div className="container max-w-4xl">
-            <p className="text-sm font-bold text-[#C9A14A] uppercase tracking-[0.28em]">16th April, 2026</p>
-            <h1 className="mt-4 text-4xl md:text-6xl font-serif font-bold text-white">Canada's 2026 Immigration Overhaul: Key Changes You Need to Know</h1>
-            <p className="mt-6 text-xl leading-8 text-blue-100">
+            <p className="text-sm font-bold text-[#EF3340] uppercase tracking-[0.28em]">16th April, 2026</p>
+            <h1 className="mt-4 text-4xl md:text-6xl font-serif font-bold text-[#000]">Canada's 2026 Immigration Overhaul: Key Changes You Need to Know</h1>
+            <p className="mt-6 text-xl leading-8 text-[#585858]">
               Canada's immigration system is undergoing its most significant recalibration in years. With targets dropping and new rules targeting sustainability, here's what changed in 2026 – and how it affects applicants.
             </p>
-            <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#C9A14A]">Estimated read: 3 minutes</p>
+            <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#EF3340]">Estimated read: 3 minutes</p>
           </div>
         </section>
         <section className="container max-w-4xl py-16">
           <div className="space-y-10">
             {sections.map((section) => (
-              <section key={section.title} className="rounded-xl border border-[#0B1F3A]/10 bg-white p-7 shadow-sm">
-                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0B1F3A]">{section.title}</h2>
+              <section key={section.title} className="rounded-xl border border-[#EF3340]/50 bg-white p-7 shadow-sm">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000]">{section.title}</h2>
                 <ul className="mt-5 grid gap-3">
                   {section.points.map((point) => (
-                    <li key={point} className="border-l-2 border-[#C9A14A] bg-[#EEF2F7]/70 px-4 py-3 text-slate-700">{point}</li>
+                    <li key={point} className="border-l-2 border-[#EF3340] bg-[#EEF2F7]/70 px-4 py-3 text-slate-700">{point}</li>
                   ))}
                 </ul>
               </section>
             ))}
           </div>
           <section className="mt-10 rounded-xl bg-[#EEF2F7] p-8">
-            <h2 className="text-3xl font-serif font-bold text-[#0B1F3A]">Action Steps for Applicants</h2>
-            <div className="mt-5 grid gap-3 text-slate-700">
+            <h2 className="text-3xl font-serif font-bold text-[#000]">Action Steps for Applicants</h2>
+            <div className="mt-5 grid gap-3 text-[#585858]">
               <p><strong>Check Eligibility:</strong> Use IRCC's Come to Canada Tool.</p>
               <p><strong>Track Draws:</strong> Monitor IRCC Express Entry Rounds.</p>
               <p><strong>Levels Plan:</strong> Review full 2026-2028 details through IRCC supplementary information.</p>
             </div>
           </section>
-          <section className="mt-10 rounded-xl bg-[#0B1F3A] p-8 text-white">
+          <section className="mt-10 rounded-xl bg-[#350000] p-8 text-white">
             <h2 className="text-3xl font-serif font-bold text-white">Bottom line</h2>
             <p className="mt-4 leading-8 text-blue-100">
               Canada prioritizes economic impact, French speakers, and rooted temporary residents while curbing volumes and fraud. Act fast – new Express Entry categories are live now.
             </p>
-            <Button asChild className="mt-6 bg-[#C9A14A] hover:bg-[#b08b3a] text-white">
+            <Button asChild className="mt-6 bg-[#EF3340] hover:bg-[#EF3340] text-white">
               <Link href="/contact">Book a Consultation</Link>
             </Button>
           </section>
